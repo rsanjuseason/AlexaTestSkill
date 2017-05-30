@@ -17,9 +17,9 @@ app.error = function( exception, request, response ) {
 	response.say( 'Sorry an error occured ' + error.message);
 };
 
-app.intent('sayNumber',
+app.intent('saynumber',
   {
-    "slots":{"number":"NUMBER"}
+    "slots":{"number":"AMAZON.NUMBER"}
 	,"utterances":[ 
 		"say the number {1-100|number}",
 		"give me the number {1-100|number}",
